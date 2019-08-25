@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+
+    <title>Ahmad Khamdani - webmaster</title>
+</head>
+
+<body>
+    <div class="transition"></div>
+    <nav>
+        <ul>
+            <li>A.</li>
+            <li>Contact</li>
+            <li>Skills</li>
+            <li>Portfolio</li>
+            <li>About</li>
+        </ul>
+
+
+    </nav>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <div class="nav-mobile">
+        <div class="nav-trans"></div>
+        <ul>
+            <li class="active">Home</li>
+            <li>Contact</li>
+            <li>Skills</li>
+            <li>Portfolio</li>
+            <li>About</li>
+        </ul>
+    </div>
+
+    <div class="konten">
+        <!-- left side -->
+        <h5>Ahmad Khamdani</h5>
+        <!-- right side -->
+        <div class="socmed">
+            <a target="_blank" class="fab fa-whatsapp"></a>
+            <a target="_blank" class="fab fa-instagram"></a>
+            <a target="_blank" class="fab fa-twitter"></a>
+            <a target="_blank" class="fab fa-facebook-f"></a>
+            <i></i>
+        </div>
+
+        <div class="centertext">
+            <div class="dibungkusMas">
+                <h1>
+                    <span>H</span>
+                    <span>e</span>
+                    <span>l</span>
+                    <span>l</span>
+                    <span>o</span>
+                </h1>
+                <div class="hrNew"></div>
+                <div class="clear"></div>
+                <div class="pbungkus">
+                    
+                    <p>
+                        I specialise in designing responsive, secure and fully customised websites using simple
+                        CSS
+                        and
+                        Javascript.
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="contact">
+            <span>
+                <b>Phone : </b>
+                <p>(+62) 896-8159-3634</p>
+            </span>
+            <span>
+                <b>E-mail : </b>
+                <p>ahmadkhamdani9@gmail.com</p>
+            </span>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script>
+        // main
+        const link = document.querySelectorAll('nav ul li');
+        const real = link[0];
+        const contact = link[1];
+        const condition = link[2];
+        const portfolio = link[3];
+        const about = link[4];
+        let trans = document.querySelector('.transition');
+
+        const link2 = document.querySelectorAll('.nav-mobile ul li');
+        const real2 = link2[0];
+        const contact2 = link2[1];
+        const condition2 = link2[2];
+        const portfolio2 = link2[3];
+        const about2 = link2[4];
+        // bahan
+        const kh5 = document.querySelector('.konten h5');
+
+
+        // link transition
+        contact.addEventListener('click', function () {
+            trans.style.animation = 'transitionFadeIn 2.5s ease-out forwards';
+            setTimeout(function () {
+                document.location.href = 'contact.html';
+            }, 3200);
+
+        });
+        real.addEventListener('click', function () {
+            trans.style.animation = 'transitionFadeIn 2.5s ease-out forwards';
+            setTimeout(function () {
+                document.location.href = 'index.html';
+            }, 3200);
+
+        });
+        condition.addEventListener('click', function () {
+            trans.style.animation = 'transitionFadeIn 2.5s ease-out forwards';
+            setTimeout(function () {
+                document.location.href = 'skills.html';
+            }, 3200);
+
+        });
+        portfolio.addEventListener('click', function () {
+            trans.style.animation = 'transitionFadeIn 2.5s ease-out forwards';
+            setTimeout(function () {
+                document.location.href = 'portfolio.html';
+            }, 3200);
+
+        });
+        about.addEventListener('click', function () {
+            trans.style.animation = 'transitionFadeIn 2.5s ease-out forwards';
+            setTimeout(function () {
+                document.location.href = 'about.html';
+            }, 3200);
+
+        });
+        // link transition 2
+        contact2.addEventListener('click', function () {
+            trans.style.animation = 'transitionFadeIn 1.5s ease-out forwards';
+            setTimeout(function () {
+                document.location.href = 'contact.html';
+            }, 1700);
+
+        });
+        real2.addEventListener('click', function () {
+            trans.style.animation = 'transitionFadeIn 1.5s ease-out forwards';
+            setTimeout(function () {
+                document.location.href = 'index.html';
+            }, 1700);
+
+        });
+
+        condition2.addEventListener('click', function () {
+            trans.style.animation = 'transitionFadeIn 1.5s ease-out forwards';
+            setTimeout(function () {
+                document.location.href = 'skills.html';
+            }, 1700);
+
+        });
+        portfolio2.addEventListener('click', function () {
+            trans.style.animation = 'transitionFadeIn 1.5s ease-out forwards';
+            setTimeout(function () {
+                document.location.href = 'portfolio.html';
+            }, 1700);
+
+        });
+        about2.addEventListener('click', function () {
+            trans.style.animation = 'transitionFadeIn 1.5s ease-out forwards';
+            setTimeout(function () {
+                document.location.href = 'about.html';
+            }, 1700);
+
+        });
+        // hamburger nav
+        let hbg = document.querySelector('.hamburger');
+        let l1 = document.querySelector('.hamburger .line:first-of-type');
+        let l2 = document.querySelector('.hamburger .line:nth-of-type(2)');
+        let l3 = document.querySelector('.hamburger .line:last-of-type');
+        let navMobile = document.querySelector('.nav-mobile');
+        let navTrans = document.querySelector('.nav-trans');
+        let jumlahClick = 1;
+        let waitRespond = 'click';
+        let wait = true;
+
+
+        hbg.addEventListener(waitRespond, function () {
+            if (wait == true) {
+                wait = false;
+                if (jumlahClick == 1) {
+                    l1.style.top = '16px';
+                    l1.style.transform = 'rotate(45deg)';
+                    l2.style.opacity = 0;
+
+                    l3.style.top = '16px';
+                    l3.style.transform = 'rotate(-45deg)';
+                    jumlahClick++;
+                    navMobile.style.display = 'block';
+
+                    // true nav
+                    navMobile.style.animation = 'swipeLeft 1s ease forwards';
+                    navTrans.style.animation = 'swipeLeft 0s ease forwards';
+
+                    hbg.style.border = '1px solid rgba(0,0,0,1)';
+                    l1.style.backgroundColor = 'rgba(0,0,0,1)';
+                    l2.style.backgroundColor = 'rgba(0,0,0,1)';
+                    l3.style.backgroundColor = 'rgba(0,0,0,1)';
+                    hbg.style.transition = '1s';
+                    // kh5.style.transition = '2s';
+                    // kh5.style.color = 'black';
+                    setTimeout(() => {
+                        navTrans.style.animation = 'swipeRight 0.8s ease forwards';
+                    }, 750);
+                    setTimeout(() => {
+                        hbg.style.transition = '0s';
+                    }, 1000);
+                } else {
+                    l1.style.top = '7px';
+                    l1.style.transform = 'rotate(0deg)';
+                    l2.style.opacity = 1;
+
+                    l3.style.top = '24px';
+                    l3.style.transform = 'rotate(0deg)';
+                    jumlahClick = 1;
+                    navTrans.style.animation = 'swipeLeft 0.8s ease forwards';
+
+
+
+                    hbg.style.border = '1px solid rgba(255,255,255,1)';
+                    l1.style.backgroundColor = 'rgba(255,255,255,1)';
+                    l2.style.backgroundColor = 'rgba(255,255,255,1)';
+                    l3.style.backgroundColor = 'rgba(255,255,255,1)';
+                    // kh5.style.color = 'white';
+                    // kh5.style.transition = '2s';
+                    hbg.style.transition = '1s';
+
+                    setTimeout(() => {
+                        navMobile.style.animation = 'swipeRight 1s ease forwards';
+                    }, 1000);
+                    hbg.style.transition = '1s';
+                    setTimeout(() => {
+                        hbg.style.transition = '0s';
+                        navMobile.style.display = 'none';
+                    }, 2000);
+
+                }
+                setTimeout(function () {
+                    wait = true;
+                }, 2000);
+            }
+
+
+
+
+        });
+
+        // socmed
+        var soc = document.querySelectorAll('.socmed a');
+        // wa , ig, twit , fb
+        var wa = soc[0];
+        var ig = soc[1];
+        var tw = soc[2];
+        var fb = soc[3];
+        wa.style.cursor = 'pointer';
+        ig.style.cursor = 'pointer';
+        fb.style.cursor = 'pointer';
+        tw.style.cursor = 'pointer';
+
+        wa.onclick = function () {
+            window.open('https://www.whatsapp.com', '_blank');
+        }
+        ig.onclick = function () {
+            window.open('https://www.instagram.com', '_blank');
+        }
+        tw.onclick = function () {
+            window.open('https://www.twitter.com', '_blank');
+        }
+        fb.onclick = function () {
+            window.open('https://www.facebook.com', '_blank');
+        }
+
+        var mq = window.matchMedia("(max-width: 991px)");
+        if (mq.matches) {
+            // window width is at less than 570px
+            wa.onclick = function () {
+
+            }
+            ig.onclick = function () {
+
+            }
+            tw.onclick = function () {
+
+            }
+            fb.onclick = function () {
+
+            }
+        }
+    </script>
+</body>
+
+</html>

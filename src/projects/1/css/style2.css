@@ -1,0 +1,291 @@
+
+.bbbb
+{
+	font-family:calibri;
+	font-size:15 px;
+	text-align:left;
+	line-height : 1.8;
+	margin: 8px 0 0 0;
+    color: #999;
+	font-family: 'Open Sans', sans-serif;
+}
+.table tr td {
+	padding-bottom : 20px;
+
+}
+table.table {
+	display : block!important;
+	width : 85%!important;
+	position:static!important;
+	margin-top : 0px!important;
+	margin : auto;
+}
+
+.aaaa {
+	font-size: 16px;
+    margin-bottom: 0;
+    color: #333;
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+	width :30%;
+}
+table.table tr td{
+	border-top : 0px solid transparent!important;
+	border-bottom : 0px solid transparent!important;
+	font-family : 'Poppins', sans-serif
+	padding : 0px 3px;
+	
+}
+#b p{
+	padding : 50px 0px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #888;
+	display : block;
+	width : 55%;
+	margin : auto;
+	text-align : justify;
+	font-family: 'Open Sans', sans-serif;
+	box-sizing : border-box;
+	text-align-last : center;
+}
+#a p {
+	display:block;
+	font-size : 26px!important;
+	margin-bottom: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+	font-family: 'Poppins', sans-serif;
+	text-align:center;
+	margin : auto;
+	margin-top : 100px;
+	padding : 0px 5px;
+}
+#a
+{	width : 100%;
+	text-align: center;  
+	font-size: 25px;
+}
+#b
+{
+	color: grey;
+	font-size: 20px;
+	text-align: center;
+}
+table {
+	width : 90%;
+}
+
+
+/* dosen */
+
+.dosen h3#dosen {
+	font-size : 26px;
+	text-align:center;
+	font-family: 'Poppins', sans-serif;
+	font-weight : 700;
+	padding : 80px 0px;
+	margin-top : 30px;
+}
+.dosen h3{
+	font-weight : bolder;
+	font-size : 24px;
+	font-family: 'Poppins', sans-serif;
+	color : #444;
+	
+}
+.container {
+	width : 80%;
+	margin : auto;
+	height : 500px;
+	display:block;
+}
+.container2{
+	display : none;
+}
+.dBlock {
+	display : block;
+}
+.dNone {
+	display : none;
+}
+.container2 .left {
+	background-image: url(../image2/sandra.jpg)!important;
+}
+.container .left {
+	width : 45%;
+	height : 100%;
+	display : inline-block;
+	float :left;
+	background-image: url(../image2/sandika.jpg);
+	background-size : cover;
+	margin-left : 6px!important;
+}
+.container .right {
+	width : 50%;
+	display : inline-block;
+	float : left;
+	padding-left : 5px!important;
+}
+.container .right h3 {
+	font-size : 24px;
+	line-height:28px;
+	padding : 0px 0px;
+	text-align:left;
+	margin-top : 15px;
+}
+.container .right p {
+	font-size: 20px;
+    font-weight: 300;
+    color: #666;
+	line-height : 1.8;
+	box-sizing : border-box;
+	margin : 30px 0px;
+}
+
+.container .right ul{
+	list-style :none;
+	display : block;
+	margin-top : 80px;	
+}
+.container .right ul li {
+	display : inline-block;
+	margin-right : 5px;
+}
+.container .right ul li:nth-child(3){
+	margin-right : 10px;
+}
+.container .right ul li:first-child{
+	margin-right : 0px;
+}
+.container .right ul li a{
+	transition : 0.5s;
+}
+.container .right ul li a:hover{
+	transition : 0.5s;
+	background-position: 0px 25px;
+}
+.container .right ul li:first-child a{
+	display : inline-block;
+	background-image : url(../image2/twitter.png);
+	background-size : cover;
+	border-radius : 80px;
+	width : 25px;
+	height : 25px;
+	margin-right : 12px;
+	border : 1px solid gray;
+}
+.container .right ul li:nth-child(2) a {
+	display : inline-block;
+	background-image : url(../image2/ig.png);
+	background-size : cover;
+	margin-right : 7px;
+	border-radius : 80px;
+	width : 25px;
+	height : 25px;
+	border : 1px solid gray;
+}
+.container .right ul li:nth-child(3) a {
+	display : inline-block;
+	background-image : url(../image2/fb.png);
+	background-color : royalblue;
+	background-size : cover;
+	border-radius : 80px;
+	width : 25px;
+	height : 25px;
+	border : 1px solid gray;
+}
+.container .right ul li:last-child a{
+	display : inline-block;
+	background-color:salmon;
+	background-image : url(../image2/g.png);
+	background-size : cover;
+	margin-right : 7px;
+	border-radius : 80px;
+	width : 25px;
+	height : 25px;
+	border : 1px solid gray;
+}
+
+div.btn-change {
+	width : 200px;
+	margin : auto;
+	text-align:center;
+}
+.btn-change .btn1 a{
+	width : 15px;
+	height : 15px;
+	background-color:gray;
+	border : 1px solid gray;
+	border-radius : 80px;
+	margin: auto;
+	display:inline-block;
+}
+.btn1 {
+	display:inline-block;
+	margin-bottom : 30px;
+	margin-top : 15px;
+}
+.btn2 {
+	display:inline-block;
+	margin-bottom : 30px;
+}
+.btn-change .btn2 a{
+	display : inline-block;
+	width : 15px;
+	height : 15px;
+	background-color:#EEE;
+	border : 1px solid gray;
+	border-radius : 80px;
+	margin: auto;
+}
+
+@media (max-width : 772px) {
+	#b p {
+		width : 90%;
+		text-align: justify;
+	}
+}
+@media (max-width : 663px) {
+	.wide1 {
+		width : 10%!important;
+	}
+	.wide2 {
+		width : 10%!important;
+	}
+	.container .right ul {
+		margin-left : 10px;
+		margin-bottom : 5px;
+		margin-top : -5px;
+	}
+}
+@media (max-width : 1062px) {
+	.container  {
+		width : 100%;
+	}
+}
+@media (max-width : 869px){
+	html,body {
+		width : 100%;
+		overflow-x : hidden;
+	}
+	.container .left {
+		width : 97%;
+	}
+	.container .right {
+		width : 95%;
+		margin-left : 5px;
+		padding-left : 0px;
+	}
+	.container .right p {
+		text-align : justify;
+	}
+}
+@media (max-width :983px) {
+	table.table {
+		display:none!important;
+	}
+}

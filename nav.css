@@ -1,0 +1,212 @@
+/* hamburger */
+.hamburger {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 0px solid white;
+    position: absolute;
+    z-index: 15;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+    transition: 1s;
+    opacity: 0;
+}
+
+.hamburger .line {
+    display: block;
+    width: 50%;
+    height: 1px;
+    background-color: white;
+    margin-top: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 25%;
+    transition: 1s;
+}
+
+.line:first-of-type {
+    top: 7px;
+}
+
+.line:nth-of-type(2) {
+    opacity: 1;
+    transition: 1s;
+    top: 15px;
+}
+
+.line:last-of-type {
+    top: 24px;
+}
+
+
+/* hamburger - frame - nav mobile*/
+.nav-mobile {
+    display: block;
+    z-index: 14;
+    position: absolute;
+    left: 100%;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: white;
+    opacity: 0;
+    /* animation: swipeLeft 3s ease-out 2.5s forwards; */
+}
+
+.nav-mobile ul {
+    display: block;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    list-style: none;
+    position: absolute;
+}
+
+.nav-mobile ul li {
+    list-style: none;
+    margin-bottom: 15px;
+    font-size: 21px;
+    position: relative;
+    color: rgba(0, 0, 0, .5);
+    font-family: Europa, sans-serif;
+    cursor: pointer;
+    transition: .7s;
+}
+
+.nav-mobile ul li:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+.nav-mobile ul li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -4px;
+    left: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+}
+
+.nav-mobile ul li.active::after {
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+.nav-mobile ul li.active {
+    color: rgba(0, 0, 0, 1);
+}
+
+.nav-trans {
+    display: block;
+    z-index: 15;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: white;
+
+}
+
+@media (max-width : 991px) {
+    nav {
+        display: none;
+    }
+    .nav-mobile,
+    .hamburger,
+    .line {
+        opacity: 1;
+    }
+
+    .hamburger {
+        border: 1px solid white;
+    }
+}
+
+@keyframes swipeLeft {
+    0% {
+        top: 0px;
+        left: 100%;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+}
+
+@keyframes swipeRight {
+
+
+    0% {
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    100% {
+        top: 0px;
+        left: 100%;
+        right: 0px;
+        bottom: 0px;
+    }
+}
+
+/* javascript */
+/* const link=document.querySelectorAll('nav ul li');
+const real=link[0];
+const contact=link[1];
+const condition=link[2];
+const portfolio=link[3];
+const about=link[4]; */
+
+/* const link2=document.querySelectorAll('.nav-mobile ul li');
+const real2=link2[0];
+const contact2=link2[1];
+const condition2=link2[2];
+const portfolio2=link2[3];
+const about2=link2[4]; */
+
+/* let body = document.querySelector('body');
+        const kh5 = document.querySelector('.konten h5'); */
+
+/*------------------------- link transition ------------------------------------- */
+        /* contact.addEventListener('click', function () {
+            trans.style.animation = 'transitionFadeIn 2.5s ease-out forwards';
+            setTimeout(function () {
+                document.location.href = 'contact.html';
+            }, 3200);
+
+        });
+        real.addEventListener('click', function () {
+            trans.style.animation = 'transitionFadeIn 2.5s ease-out forwards';
+            setTimeout(function () {
+                document.location.href = 'index.html';
+            }, 3200);
+
+        });
+        // link transition 2
+        contact2.addEventListener('click', function () {
+            trans.style.animation = 'transitionFadeIn 1.5s ease-out forwards';
+            setTimeout(function () {
+                document.location.href = 'contact.html';
+            }, 1700);
+
+        });
+        real2.addEventListener('click', function () {
+            trans.style.animation = 'transitionFadeIn 1.5s ease-out forwards';
+            setTimeout(function () {
+                document.location.href = 'index.html';
+            }, 1700);
+
+        }); */
