@@ -21,7 +21,7 @@
     <title>Ahmad Khamdani - webmaster</title>
 </head>
 
-<body class="d-none">
+<body>
     <div class="transition"></div>
     <nav>
         <ul>
@@ -130,16 +130,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/1.5.0/jquery.waitforimages.min.js"></script>
+    
     <script>
-        $(document).ready(function(){
-            
-            $('body').waitForImages(function () {
-                // All descendant images have loaded, now slide up.
-                $('body').removeAttr('class');
-            });
-
-        });
         // main
         const link = document.querySelectorAll('nav ul li');
         const real = link[0];
