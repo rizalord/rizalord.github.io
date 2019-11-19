@@ -566,7 +566,48 @@ nav ul li:first-child a {
     background-color: rgb(19, 242, 198);
     animation: loadDiagram8 1.5s ease 2.5s forwards;
 }
-
+.leftc ul li:nth-of-type(9) .diagram::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 100%;
+    bottom: 0px;
+    border-top-left-radius: 7.5px;
+    border-bottom-left-radius: 7.5px;
+    border-top-right-radius: 7.5px;
+    border-bottom-right-radius: 7.5px;
+    background-color: rgb(19, 242, 198);
+    animation: loadDiagram9 1.5s ease 2.5s forwards;
+}
+.leftc ul li:nth-of-type(10) .diagram::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 100%;
+    bottom: 0px;
+    border-top-left-radius: 7.5px;
+    border-bottom-left-radius: 7.5px;
+    border-top-right-radius: 7.5px;
+    border-bottom-right-radius: 7.5px;
+    background-color: rgb(19, 242, 198);
+    animation: loadDiagram10 1.5s ease 2.5s forwards;
+}
+.leftc ul li:nth-of-type(11) .diagram::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 100%;
+    bottom: 0px;
+    border-top-left-radius: 7.5px;
+    border-bottom-left-radius: 7.5px;
+    border-top-right-radius: 7.5px;
+    border-bottom-right-radius: 7.5px;
+    background-color: rgb(19, 242, 198);
+    animation: loadDiagram11 1.5s ease 2.5s forwards;
+}
 
 
 
@@ -678,6 +719,29 @@ nav ul li:first-child a {
     background-repeat: no-repeat;
 }
 
+.panel9 {
+    /* display: block; */
+    background-image: url('https://uploads-ssl.webflow.com/5945c0691ffdf51725f42d2f/59a014cafcf08500017d4c9b_1bgtablette2.jpg');
+    background-position-x: -200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.panel10 {
+    /* display: block; */
+    background-image: url('https://uploads-ssl.webflow.com/5945c0691ffdf51725f42d2f/59a014cafcf08500017d4c9b_1bgtablette2.jpg');
+    background-position-x: -200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.panel11 {
+    /* display: block; */
+    background-image: url('https://uploads-ssl.webflow.com/5945c0691ffdf51725f42d2f/59a014cafcf08500017d4c9b_1bgtablette2.jpg');
+    background-position-x: -200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 /* END OF PANEL SETTINGS */
 
 
@@ -954,7 +1018,7 @@ nav ul li:first-child a {
     }
 
     100% {
-        right: 20%;
+        right: 5%;
     }
 }
 
@@ -964,7 +1028,7 @@ nav ul li:first-child a {
     }
 
     100% {
-        right: 35%;
+        right: 25%;
     }
 }
 
@@ -974,7 +1038,7 @@ nav ul li:first-child a {
     }
 
     100% {
-        right: 25%;
+        right: 15%;
     }
 }
 
@@ -984,7 +1048,7 @@ nav ul li:first-child a {
     }
 
     100% {
-        right: 50%;
+        right: 10%;
     }
 }
 
@@ -994,7 +1058,7 @@ nav ul li:first-child a {
     }
 
     100% {
-        right: 70%;
+        right: 23%;
     }
 }
 
@@ -1014,7 +1078,7 @@ nav ul li:first-child a {
     }
 
     100% {
-        right: 50%;
+        right: 20%;
     }
 }
 
@@ -1024,6 +1088,37 @@ nav ul li:first-child a {
     }
 
     100% {
-        right: 20%;
+        right: 15%;
     }
 }
+
+@keyframes loadDiagram9 {
+    0% {
+        right: 100%;
+    }
+
+    100% {
+        right: 70%;
+    }
+}
+
+@keyframes loadDiagram10 {
+    0% {
+        right: 100%;
+    }
+
+    100% {
+        right: 77%;
+    }
+}
+
+@keyframes loadDiagram11 {
+    0% {
+        right: 100%;
+    }
+
+    100% {
+        right: 38%;
+    }
+}
+

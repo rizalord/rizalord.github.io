@@ -23,7 +23,7 @@
     <title>Portfolio - Ahmad Khamdani</title>
 </head>
 
-<body class="d-none">
+<body>
     <div class="transition"></div>
     <nav>
         <ul>
@@ -67,27 +67,42 @@
                     </h2>
                 </div>
                 <img src="src/img/project1.png" alt="">
+                <div class="linkUrl"  data-link="https://rizalord.github.io/src/projects/1/index.html"></div>
+            </div>
+
+            <div draggable="" class="hasilProject">
+                <div class="blacker">
+                    <h2>Check
+                        <div class="after"></div>
+                    </h2>
+                </div>
+                <img src="src/img/project2.png" alt="">
+                <div class="linkUrl" data-link="https://rizalord.github.io/pahlawan"></div>
+            </div>
+
+            <div draggable="" class="hasilProject">
+                <div class="blacker">
+                    <h2>Check
+                        <div class="after"></div>
+                    </h2>
+                </div>
+                <img src="src/img/project3.png" alt="">
+                <div class="linkUrl" data-link="https://github.com/rizalord/GoCure"></div>
+            </div>
+
+
+            <div draggable="" class="hasilProject">
+                <div class="blacker">
+                    <h2>Check
+                        <div class="after"></div>
+                    </h2>
+                </div>
+                <img src="src/img/project4.png" alt="">
+                <div class="linkUrl" data-link="https://github.com/rizalord/voya"></div>
             </div>
 
             <!-- RIGHT COLUMN -->
-            <div class="hasilProject">
-                <div class="kosongBlocker">
-                    <h4>Coming Soon...</h4>
-                </div>
-                <img src="src/img/project1.png">
-            </div>
-            <div class="hasilProject">
-                <div class="kosongBlocker">
-                    <h4>Coming Soon...</h4>
-                </div>
-                <img src="src/img/project1.png">
-            </div>
-            <div class="hasilProject">
-                <div class="kosongBlocker">
-                    <h4>Coming Soon...</h4>
-                </div>
-                <img src="src/img/project1.png">
-            </div>
+            
             <div class="hasilProject">
                 <div class="kosongBlocker">
                     <h4>Coming Soon...</h4>
@@ -147,7 +162,6 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script>
-
         const link = document.querySelectorAll('nav ul li');
         const real = link[0];
         const contact = link[1];
@@ -351,34 +365,46 @@
         }
 
         // blacker
-        let black = document.querySelector('.blacker');
-        let hasilProject = document.querySelector('.hasilProject');
-        let text = document.querySelector('.blacker h2');
-        let after = document.querySelector('.blacker h2 .after');
+        let black = document.querySelectorAll('.blacker');
+        let hasilProject = document.querySelectorAll('.hasilProject');
+        let text = document.querySelectorAll('.blacker h2');
+        let after = document.querySelectorAll('.blacker h2 .after');
+        let linkKu = document.querySelectorAll('.hasilProject .linkUrl');
 
-        hasilProject.addEventListener('mouseover', function () {
-            black.style.transition = '1s';
-            text.style.transition = '1s';
-            text.style.opacity = '1';
-            black.style.backgroundColor = 'rgba(59, 54, 54, .85)';
-        });
+        for (let j = 0; j < black.length; j++) {
+            hasilProject[j].addEventListener('mouseover', function () {
+                black[j].style.transition = '1s';
+                text[j].style.transition = '1s';
+                text[j].style.opacity = '1';
+                black[j].style.backgroundColor = 'rgba(59, 54, 54, .85)';
+            });
 
-        hasilProject.addEventListener('mouseleave', function () {
-            black.style.transition = '1s';
-            black.style.backgroundColor = 'rgba(59, 54, 54, 0)';
-            text.style.opacity = '0';
-        });
+            hasilProject[j].addEventListener('mouseleave', function () {
+                black[j].style.transition = '1s';
+                black[j].style.backgroundColor = 'rgba(59, 54, 54, 0)';
+                text[j].style.opacity = '0';
+            });
 
-        var url = window.location.href;
-        var arr = url.split('/');
-        // var l = res.push('src/project/index.html');
-        arr.pop();
-        arr.push('src/projects/1/index.html');
-        var x = arr.join('/');
+            
+            // var projectNum = j + 1;
+            // var projectKe = projectNum.toString();
+            // arr.push(`src/projects/${ projectKe }/index.html`);
+            // var x = arr.join('/');
 
-        after.addEventListener('click', function () {
-            window.open(x, "_blank");
-        });
+            after[j].addEventListener('click', function () {
+                // var url = window.location.href;
+                // var arr = url.split('/');
+                // // var l = res.push('src/project/index.html');
+                // arr.pop();
+
+                // var projectNum = j + 1;
+                // var projectKe = projectNum.toString();
+                // arr.push(`src/projects/${ projectKe }/index.html`);
+                // var x = arr.join('/');
+                
+                window.open( linkKu[j].getAttribute('data-link') , "_blank");
+            });
+        }
     </script>
 </body>
 

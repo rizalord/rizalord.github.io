@@ -1,0 +1,953 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* END RESET */
+body,
+html {
+    overflow-x: hidden !important;
+}
+
+body {
+    width: 100vw;
+    /* height: 100vh; */
+    height: auto;
+    overflow-x: hidden;
+    padding-bottom: 100px;
+}
+
+
+/* navbar */
+
+.hamburger {
+    display: none;
+}
+
+.logoWebsite {
+    width: 100%;
+    height: 120px;
+    /* background-color: red; */
+    position: relative;
+    display: inline-block;
+    /* padding-right: 20px; */
+    /* border-right: 1px solid rgba(255, 255, 255, 0.2); */
+}
+
+.logo-wrapper {
+    display: inline-block;
+    margin-left: 80px;
+    width: 200px;
+    height: 100%;
+    padding-right: 30px;
+    position: relative;
+}
+
+.logo-wrapper::after {
+    content: '';
+    position: absolute;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    right: 0px;
+    top: 10px;
+    bottom: 10px;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+nav img::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: yellow !important;
+}
+
+
+nav {
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    width: 100%;
+    height: auto;
+    max-height: 120px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav ul,
+nav ul li {
+    list-style: none;
+    display: inline-block;
+
+}
+
+nav ul {
+    float: right;
+    width: auto;
+    height: 100%;
+    padding-right: 180px;
+    /* background-color: red; */
+}
+
+nav ul li {
+    font-family: 'Monda',
+        sans-serif;
+    height: 30px;
+
+    line-height: 30px;
+    margin-top: 45px;
+    /* line-height: 120px; */
+    font-size: 19px;
+    margin-left: 80px;
+    /* background-color: red; */
+    position: relative;
+
+}
+
+
+nav ul li a {
+    color: rgb(255, 255, 255, 0.8);
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    padding: 0px 10px;
+    position: relative;
+
+}
+
+nav ul li:hover a {
+    color: rgb(255, 255, 255, 1);
+}
+
+nav ul li:hover a::after {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    /* width: 100%; */
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-animation: melebar 0.15s ease forwards;
+    animation: melebar 0.15s ease forwards;
+}
+
+
+@-webkit-keyframes melebar {
+    0% {
+        width: 0px;
+
+    }
+
+    100% {
+        width: 100%;
+
+    }
+}
+
+
+@keyframes melebar {
+    0% {
+        width: 0px;
+
+    }
+
+    100% {
+        width: 100%;
+
+    }
+}
+
+
+@media (max-width : 1040px) {
+
+    nav {
+        max-height: 80px;
+    }
+
+    .logoWebsite {
+        height: 80px;
+    }
+
+
+    nav ul {
+        /* background-color: red; */
+        padding-right: 100px;
+    }
+
+    nav ul li {
+        height: 25px;
+
+        line-height: 25px;
+        margin-top: 25px;
+        /* line-height: 120px; */
+        font-size: 19px;
+        margin-left: 60px;
+        /* background-color: red; */
+        position: relative;
+
+    }
+
+    .logo-wrapper {
+        margin-left: 40px;
+        width: 150px;
+        height: 100%;
+        padding-right: 40px;
+        position: relative;
+    }
+
+    .logo-wrapper::after {
+        content: '';
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        bottom: 10px;
+        width: 1px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+@media (max-width : 852px) {
+
+    nav {
+        max-height: 60px;
+    }
+
+    .logoWebsite {
+        height: 60px;
+    }
+
+    nav ul {
+        /* background-color: red; */
+        padding-right: 60px;
+    }
+
+    nav ul li {
+        height: 20px;
+
+        line-height: 20px;
+        margin-top: 20px;
+        /* line-height: 120px; */
+        font-size: 19px;
+        margin-left: 30px;
+        /* background-color: red; */
+        position: relative;
+
+    }
+
+    .logo-wrapper {
+        margin-left: 30px;
+        width: 100px;
+        height: 100%;
+        padding-right: 30px;
+        position: relative;
+    }
+
+    .logo-wrapper::after {
+        content: '';
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        bottom: 10px;
+        width: 1px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+}
+
+@media (max-width : 624px) {
+    nav {
+        -webkit-transition: 0.7s ease;
+        transition: 0.7s ease;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    nav ul {
+        background: -webkit-gradient(linear, left top, right top, from(#21007E), to(#E31EB6));
+        background: linear-gradient(90deg, #21007E, #E31EB6);
+        float: none;
+        width: 100%;
+        height: auto;
+        padding-right: 0px;
+        padding: 10px 10px;
+    }
+
+    nav ul li {
+        /* background-color: pink; */
+        height: 20px;
+        width: 100%;
+        line-height: 20px;
+        margin-top: 0px;
+        margin: 12px 0px;
+        /* line-height: 120px; */
+        font-family: Poppins,
+            sans-serif;
+        font-size: 16px;
+        margin-left: 0px;
+        /* background-color: red; */
+        position: relative;
+
+    }
+
+    nav ul li a {
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+
+    /* hamburger */
+    .hamburger {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border: 0px solid white;
+        position: absolute;
+        z-index: 1;
+        right: 10px;
+        top: 5px;
+        cursor: pointer;
+        -webkit-transition: 0s;
+        transition: 0s;
+        opacity: 1;
+    }
+
+    .hamburger .line {
+        display: block;
+        width: 50%;
+        height: 1px;
+        background-color: white;
+        margin-top: 7px;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        left: 25%;
+        -webkit-transition: 1s;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+    }
+
+    .line:first-of-type {
+        top: 7px;
+    }
+
+    .line:nth-of-type(2) {
+        opacity: 1;
+        -webkit-transition: 1s;
+        transition: 1s;
+        top: 15px;
+    }
+
+    .line:last-of-type {
+        top: 24px;
+    }
+
+    .logoWebsite {
+        height: 60px;
+    }
+}
+
+/* Container */
+
+.container-first {
+    width: 100%;
+    height: auto;
+
+    /* background: linear-gradient(70deg, rgb(236, 238, 255), rgb(137, 147, 255), rgb(66, 81, 250)); */
+    background-image: url('../img/home-bg-1.jpg');
+    /* background-color: red; */
+    background-position-y: -40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 6.5%;
+    padding-top: 120px;
+    padding-bottom: 150px;
+    margin-bottom: 100px;
+}
+
+
+.left-box {
+    width: 500px;
+    height: 450px;
+    position: relative;
+    padding: 10px 70px;
+    padding-top: 5px;
+    /* background-color: red; */
+    box-sizing: border-box;
+
+}
+
+.left-box h1 {
+    /* background-color: pink; */
+    /* position: absolute;
+    top: 50%;
+    transform: translateY(-50%); */
+    font-family: Poppins,
+        sans-serif;
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 70px;
+    text-decoration: none;
+    color: solid rgb(0, 0, 0);
+    text-align: left;
+    word-spacing: 0px;
+    box-sizing: border-box;
+    text-shadow: 0px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+
+@media (max-width : 1040px) {
+    .container-first {
+        padding: 10px 4.5%;
+        padding-top: 90px;
+        min-height: 740px;
+    }
+
+    .left-box {
+        width: 400px;
+        height: 400px;
+
+    }
+}
+
+@media (max-width : 852px) {
+    .container-first {
+
+        padding-top: 70px;
+        height: auto;
+        min-height: 740px;
+    }
+
+    .left-box {
+        position: absolute;
+        left: 5%;
+        right: 5%;
+        width: auto;
+        height: 320px;
+
+    }
+}
+
+@media (max-width : 589px) {
+    .left-box {
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        width: auto;
+        height: 350px;
+
+        padding: 5px;
+    }
+
+    .container-first {
+        background-size: cover;
+        padding-top: 70px;
+        height: auto;
+        min-height: 650px;
+        /* margin-bottom: 300px; */
+        margin-bottom: 0px;
+    }
+
+    .left-box h1 {
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-family: Poppins,
+            sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 50px;
+        text-decoration: none;
+        color: solid rgb(0, 0, 0);
+        text-align: left;
+        word-spacing: 0px;
+        height: 150px;
+        margin: 0 0 16px 0;
+    }
+
+
+}
+
+/* PAHLAWAN */
+.pahlawanSection {
+    padding-top: 15px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    /* background-color: red; */
+    /* background-color: #F6FBFF; */
+}
+
+.content-pahlawan {
+    width: 100%;
+    height: 100%;
+    height: auto;
+    background-image: url('../img/team-bg-left.png'),
+        url('../img/team-bg-right.png');
+    background-repeat: no-repeat,
+        no-repeat;
+    background-size: auto;
+    background-position: 0px 0px,
+        right top;
+    padding: 80px 0 60px;
+    padding-left: 11%;
+    padding-right: 11%;
+}
+
+
+
+.pahlawanSection h1 {
+    /* Font & Text */
+    font-family: Poppins, sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 60px;
+    text-decoration: none solid rgb(0, 0, 0);
+    text-align: center;
+    text-indent: 0px;
+    text-transform: none;
+    vertical-align: baseline;
+    white-space: normal;
+    word-spacing: 0px;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(0, 0, 0);
+
+
+}
+
+.box-pahlawan {
+    width: 100%;
+    height: auto;
+    /* background-color: red; */
+}
+
+.box-pahlawan li {
+    width: 100%;
+    height: auto;
+    /* background-color: pink; */
+    margin-bottom: 70px;
+}
+
+.left-side-pahlawan {
+    width: 400px;
+    height: 450px;
+    /* background-color: green; */
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+}
+
+.left-side-pahlawan img {
+    width: 290px;
+    height: 350px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 3px 5px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.right-side-pahlawan {
+    width: calc(100% - 400px);
+    background-color: rgba(0, 220, 0, 0.0);
+    height: 100%;
+    float: left;
+    padding: 10px;
+}
+
+.right-side-pahlawan h2 {
+    font-family: Poppins,
+        sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    text-decoration: none solid rgb(0, 0, 0);
+    text-align: center;
+    word-spacing: 0px;
+}
+
+.right-side-pahlawan p {
+    text-indent: 30px;
+    text-align: justify;
+    text-align-last: left;
+}
+
+.box-pahlawan li:nth-child(even) .left-side-pahlawan , 
+.box-pahlawan li:nth-child(even) .right-side-pahlawan {
+    float: right;
+}
+.box-pahlawan li:nth-child(even) .left-side-pahlawan img{
+    box-shadow: 3px 5px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (max-width : 1135px) {
+    .content-pahlawan {
+        padding-left: 3%;
+        padding-right: 4%;
+    }
+
+    .right-side-pahlawan {
+        padding: 10px 0px;
+    }
+}
+
+@media (max-width : 903px) {
+    .left-side-pahlawan {
+        width: 320px;
+    }
+
+    .right-side-pahlawan{
+        padding: 50px 0px;
+    }
+
+    .left-side-pahlawan img {
+        width: 210px;
+        height: 290px;
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 3px 5px 1px 1px rgba(0, 0, 0, 0.45);
+    }
+}
+
+@media (max-width : 800px){
+    .left-side-pahlawan{
+        width: 100%;
+    }
+    .right-side-pahlawan{
+        width: 100%;
+        padding : 30px;
+    }
+}
+
+
+
+
+
+
+@media (max-width : 576px) {
+    .content-pahlawan {
+        background-position: 0px 350px,
+            right top;
+    }
+
+
+    .pahlawanSection h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .left-side-pahlawan {
+        height: 300px;
+    }
+    .right-side-pahlawan{
+        padding-left: 1.9%;
+        padding-right: 1.9%;
+        /* background-color: red; */
+    }
+    
+    .content-pahlawan{
+        padding-left: 0px;
+    }
+}
+
+
+/* Team Section */
+.teamSection {
+    padding-top: 35px;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-color: #FFF;
+}
+
+.teamSection h1 {
+    /* Font & Text */
+    margin-bottom: 10px;
+    font-family: Poppins,
+        sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 60px;
+    text-decoration: none solid rgb(0, 0, 0);
+    text-align: center;
+    text-indent: 0px;
+    text-transform: none;
+    
+    white-space: normal;
+    word-spacing: 0px;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(0, 0, 0);
+
+    width: 100%;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.content-team {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/map.png');
+    background-repeat: no-repeat,
+        no-repeat;
+    background-size: cover;
+    background-position: 0px 0px;
+    padding: 80px 0 60px;
+}
+
+@media (max-width : 576px) {
+
+    .teamSection h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+.box-team {
+    margin: auto;
+    width: 630px;
+    height: auto;
+}
+
+.team {
+    width: 50%;
+    height: 100%;
+
+    float: left;
+
+    padding: 10px;
+    position: relative;
+}
+
+@media (max-width : 657px) {
+    .team {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .box-team {
+        width: 100%;
+    }
+}
+
+.team img {
+    margin: auto;
+    display: block;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* display: none; */
+}
+
+.border-wrapper {
+    width: 197px;
+    height: 197px;
+    z-index: 0;
+    border: 0px solid black;
+    border-radius: 100%;
+    position: relative;
+    display: block;
+    margin: auto;
+    /* background-color: #276AFF; */
+    background-image: linear-gradient(125deg, red, rgb(138, 112, 255));
+}
+
+.text-team {
+    margin-top: 20px;
+    width: 100%;
+    height: 70px;
+
+}
+
+.text-team h4 {
+    font-family: Poppins,
+        sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    text-decoration: none solid rgb(0, 0, 0);
+    text-align: center;
+    word-spacing: 0px;
+}
+
+.text-team h5 {
+    font-family: "Open Sans",
+        sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration: none solid rgb(0, 132, 255);
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 0px;
+    color: rgb(189, 89, 255);
+}
+
+
+.break {
+    clear: both;
+}
