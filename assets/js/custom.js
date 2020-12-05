@@ -237,7 +237,8 @@
   // Fetcher
   metronal.repositories = {
     // API Base Url
-    baseUrl: "https://rizalord-portfolio-cms.herokuapp.com",
+    // baseUrl: "https://rizalord-portfolio-cms.herokuapp.com",
+    baseUrl: "http://localhost:1337",
     // Getter
     init: () =>
       new Promise((resolve, reject) => {
@@ -440,7 +441,7 @@
           `<div class="item ${classes} col-md-4 col-sm-6 col-12" style="position: absolute; left: 0px; top: 351px;">
         			<!-- Image Starts -->
         			<div class="image">
-        				<img src="${metronal.repositories.baseUrl + value.image.url}" alt="${
+        				<img src="${metronal.repositories.baseUrl + value.image.formats.small.url}" alt="${
             value.title
           }">
         			</div>
@@ -482,7 +483,7 @@
         			<div id="${value.slug}" class="project-popup mfp-hide">
         				<!-- Project Picture On Popup Starts -->
         				<img class="project-picture" src="${
-                  metronal.repositories.baseUrl + value.image.url
+                  metronal.repositories.baseUrl + value.image.formats.small.url
                 }" alt="${value.title}">
         				<!-- Project Picture On Popup Ends -->
         				<!-- Project Name Starts -->
