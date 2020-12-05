@@ -237,8 +237,7 @@
   // Fetcher
   metronal.repositories = {
     // API Base Url
-    baseUrl: "http://localhost:1337",
-    // baseUrl: "https://rizalord-portfolio-cms.herokuapp.com",
+    baseUrl: "https://rizalord-portfolio-cms.herokuapp.com",
     // Getter
     init: () =>
       new Promise((resolve, reject) => {
