@@ -265,11 +265,12 @@
         "November",
         "December",
       ]
+      
 
-      var d = monthNames[date.getDate() - 1]
-      var m = date.getMonth() + 1
+      var d = date.getDate()
+      var m = monthNames[date.getMonth()]
       var y = date.getFullYear()
-      return `${m} ${d} ${y}`
+      return `${d} ${m} ${y}`
     },
     setService: function (services) {
       return services.reduce(
