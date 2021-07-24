@@ -40,7 +40,7 @@ export default function Navbar() {
         align={"center"}
         sx={{
           background: useColorModeValue(
-            "rgba(255, 255, 255, 0.75)",
+            "rgba(239, 244, 246, 0.75)",
             "rgba(29, 31, 37, 0.75)"
           ),
           backdropFilter: "saturate(180%) blur(20px)",
