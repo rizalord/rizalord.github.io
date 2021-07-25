@@ -1,6 +1,12 @@
 import { Flex, Image, Text, useColorModeValue } from "@chakra-ui/react"
+import { Skill } from "../../models/Skill"
 
-export default function SkillCard() {
+export default function SkillCard({ data }: { data: Skill }) {
+  const imageSrc: string = data.fields.logo.fields.file.url
+  const name: string = data.fields.name
+  const count: number = data.fields.countExperience
+  const type: string = data.fields.skillType.fields.name
+
   return (
     <Flex
       w="100%"
@@ -10,14 +16,9 @@ export default function SkillCard() {
       direction="column"
       alignItems="center"
       py={5}
-      px={3}
+      px={5}
     >
-      <Image
-        src="/images/skills/laravel.png"
-        alt="laravel"
-        width={16}
-        height={16}
-      />
+      <Image src={imageSrc} alt={name} width={16} height={16} fit="contain" />
 
       <Text
         fontSize="xl"
@@ -26,14 +27,17 @@ export default function SkillCard() {
         color={useColorModeValue("blackAlpha.900", "blackAlpha.900")}
         textAlign="center"
       >
-        Laravel
+        {name}
       </Text>
       <Text
         fontSize="lg"
         textAlign="center"
         color={useColorModeValue("blackAlpha.900", "blackAlpha.800")}
       >
-        <b>2 years</b> of experience.
+        <b>
+          {count} {type}
+        </b>{" "}
+        of experience.
       </Text>
     </Flex>
   )
