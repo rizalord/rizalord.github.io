@@ -7,9 +7,23 @@ import {
   Tag,
   Text,
   useColorModeValue,
+  Wrap,
+  WrapItem,
 } from "@chakra-ui/react"
+import { Project } from "../../models/Project"
 
-export default function ProjectCard() {
+export default function ProjectCard({ data }: { data: Project }) {
+  const image: string = data.fields.image.fields.file.url
+  const title: string = data.fields.title
+  const description: string = data.fields.description
+  const tags: JSX.Element[] = data.fields.tags.map((e, i) => (
+    <WrapItem key={i}>
+      <Tag size="lg" variant="solid" colorScheme="blue">
+        {e}
+      </Tag>
+    </WrapItem>
+  ))
+
   return (
     <Flex
       w="100%"
@@ -20,11 +34,12 @@ export default function ProjectCard() {
       alignItems="center"
     >
       <Image
-        src="https://rizalord-portfolio-cms.herokuapp.com/uploads/large_unpas_landing_page_dc8441a455.webp"
-        alt="unpaslandingpage"
+        src={image}
+        alt={title}
         width="full"
-        fit="cover"
-        height={{ base: "180px", md: "280px" }}
+        fit="fill"
+        objectPosition="center"
+        height={{ base: "220px", md: "280px", lg: "210px" }}
         borderTopRadius="md"
       />
       <Box py={4} px={4} width="full">
@@ -33,23 +48,16 @@ export default function ProjectCard() {
           mb={3}
           color={useColorModeValue("blackAlpha.800", "blackAlpha.800")}
         >
-          Hugoblog - Free Blog Theme Nice
+          {title}
         </Text>
         <Text
           fontSize="lg"
           mb={3}
           color={useColorModeValue("blackAlpha.600", "blackAlpha.500")}
         >
-          Clean, lightweight, and full SEO blog theme for Hugo SSG
+          {description}
         </Text>
-        <HStack spacing={2}>
-          <Tag size="lg" variant="solid" colorScheme="blue">
-            SCSS
-          </Tag>
-          <Tag size="lg" variant="solid" colorScheme="blue">
-            Bootstrap 5
-          </Tag>
-        </HStack>
+        <Wrap spacing={2}>{tags}</Wrap>
       </Box>
     </Flex>
   )
