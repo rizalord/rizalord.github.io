@@ -1,6 +1,6 @@
 const title = "Ahmad Khamdani"
-const description = `Hello, my name is Ahmad Rizal Khamdani. Usually called Rizal. I'm currently 18 years old. Born and live in Malang, East Java, Indonesia.`
-const siteUrl = "https://rizalord.me"
+const description = `I'm Ahmad Khamdani a 18 years old guy who likes to learn technologies, especially in the backend. I really like designing a good cloud infrastructure, testing applications, doing automation and other things that make application performance better.`
+const siteUrl = "https://rizalord.tech"
 
 const SEO = {
   titleTemplate: `${title} ▸ %s`,
@@ -37,6 +37,8 @@ const SEO = {
     { name: "msapplication-TileColor", content: "#da532c" },
     { name: "msapplication-config", content: "/favicon/browserconfig.xml" },
     { name: "theme-color", content: "#ffffff" },
+    { name: "image", content: `${siteUrl}/me.jpg` },
+    { name: "author", content: title },
   ],
   additionalLinkTags: [
     {
