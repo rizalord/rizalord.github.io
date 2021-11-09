@@ -14,7 +14,7 @@ const SEO = {
     description,
     images: [
       {
-        url: `${siteUrl}/me-circle.png`,
+        url: `${siteUrl}/images/me.jpg`,
         alt: title,
         width: 1200,
         height: 630,
@@ -37,7 +37,7 @@ const SEO = {
     { name: "msapplication-TileColor", content: "#da532c" },
     { name: "msapplication-config", content: "/favicon/browserconfig.xml" },
     { name: "theme-color", content: "#ffffff" },
-    { name: "image", content: `${siteUrl}/me.jpg` },
+    { name: "image", content: `${siteUrl}/images/me.jpg` },
     { name: "author", content: title },
   ],
   additionalLinkTags: [
