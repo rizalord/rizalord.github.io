@@ -11,7 +11,10 @@ export async function getStaticProps() {
   items.reverse()
 
   return {
-    props: { skills: items },
+    props: { 
+      skills: items 
+    },
+    revalidate: 60 * 60, // 1 hours
   }
 }
 
