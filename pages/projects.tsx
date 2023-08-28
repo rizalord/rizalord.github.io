@@ -34,7 +34,10 @@ export async function getStaticProps() {
   items.reverse()
 
   return {
-    props: { projects: items },
+    props: { 
+      projects: items 
+    },
+    revalidate: 60 * 60, // 1 hours
   }
 }
 
