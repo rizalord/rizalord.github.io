@@ -57,7 +57,7 @@ export default function About() {
           >
             <Text py={2}>
               Hello, my name is <b>Ahmad Rizal Khamdani</b>. Usually called{" "}
-              <b>Rizal</b>. I&apos;m currently 18 years old. Born and live in
+              <b>Rizal</b>. I&apos;m currently 20 years old. Born and live in
               Malang, East Java, Indonesia. Graduated from{" "}
               <b>SMK Negeri 4 Malang</b> at 2021 as Software Engineering
               student.
@@ -65,7 +65,7 @@ export default function About() {
             <Text py={2}>
               I Love make something that useful for the others like make an
               application website and i am prefer in Backend development using
-              Laravel or AdonisJS, and until now, i am still learning, because
+              Laravel or NestJS, and until now, i am still learning, because
               everyday the technologies is continues to develop.
             </Text>
             <Text py={2} mt={4} mb={2}>

@@ -16,13 +16,6 @@ export default function ProjectCard({ data }: { data: Project }) {
   const image: string = data.fields.image.fields.file.url
   const title: string = data.fields.title
   const description: string = data.fields.description
-  const tags: JSX.Element[] = data.fields.tags.map((e, i) => (
-    <WrapItem key={i}>
-      <Tag size="lg" variant="solid" colorScheme="blue">
-        {e}
-      </Tag>
-    </WrapItem>
-  ))
 
   return (
     <Flex
@@ -57,7 +50,17 @@ export default function ProjectCard({ data }: { data: Project }) {
         >
           {description}
         </Text>
-        <Wrap spacing={2}>{tags}</Wrap>
+        <Wrap spacing={2}>
+          {
+            data.fields.tags.map((e, i) => (
+              <WrapItem key={i}>
+                <Tag size="lg" variant="solid" colorScheme="blue">
+                  {e}
+                </Tag>
+              </WrapItem>
+            ))
+          }
+        </Wrap>
       </Box>
     </Flex>
   )
