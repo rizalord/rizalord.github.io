@@ -1,0 +1,14 @@
+{
+    "header": {
+        "title": "Portfolio",
+        "menu": {
+            "home": true,
+            "about": true,
+            "portfolio": true,
+            "contact": true
+        }
+    },
+    "footer_text": "© 2021 Portfolio | Designed by ",
+    "footer_designer": "Rizalord",
+    "footer_link": "https://www.linkedin.com/in/rizalord"
+}

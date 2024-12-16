@@ -1,0 +1,41 @@
+{
+    "prefix": "Hi, This Is",
+    "name": "Ahmad Rizal Khamdani",
+    "description": [
+        {
+            "type": "normal",
+            "text": "A Passionate"
+        },
+        {
+            "type": "bold",
+            "text": "Full Stack Developer"
+        },
+        {
+            "type": "normal",
+            "text": "having"
+        },
+        {
+            "type": "bold",
+            "text": "2 years"
+        },
+        {
+            "type": "normal",
+            "text": "of Experiences in Web Development and Mobile Development."
+        }
+    ],
+    "counts": [
+        {
+            "label": "Year of Experience",
+            "count": "2+"
+        },
+        {
+            "label": "Project Completed",
+            "count": "20+"
+        },
+        {
+            "label": "Certifications",
+            "count": "15+"
+        }
+    ],
+    "available": false
+}

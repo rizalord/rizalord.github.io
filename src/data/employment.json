@@ -1,0 +1,35 @@
+{
+    "name": "Work Experience",
+    "jobs": [
+        {
+            "company_longname": "PT. Ezy Industries",
+            "company_shortname": "Ezy Industries",
+            "logo": "/assets/works/ezy.svg",
+            "position_longname": "Full Stack Developer Intern",
+            "position_shortname": "Intern",
+            "startDate": "2019-11-01",
+            "endDate": "2020-11-01",
+            "link": "https://www.instagram.com/ezyindustries.id/"
+        },
+        {
+            "company_longname": "PT. Ekata Technology Indonesia",
+            "company_shortname": "Ekata Tech",
+            "logo": "/assets/works/ekata.svg",
+            "position_longname": "Freelance Full Stack Developer",
+            "position_shortname": "Freelancer",
+            "startDate": "2022-04-01",
+            "endDate": "2023-01-01",
+            "link": "https://ekata.id/"
+        },
+        {
+            "company_longname": "PT. Arkatama Multi Solusindo",
+            "company_shortname": "Arkatama",
+            "logo": "/assets/works/arkatama.svg",
+            "position_longname": "Full Stack Developer Intern",
+            "position_shortname": "Intern",
+            "startDate": "2023-08-01",
+            "endDate": "2023-12-01",
+            "link": "https://arkatama.id/"
+        }
+    ]
+}

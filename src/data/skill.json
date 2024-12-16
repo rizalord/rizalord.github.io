@@ -1,0 +1,75 @@
+{
+    "name": "Tools & Technologies",
+    "skills": [
+        {
+            "name": "Figma",
+            "icon": "/assets/skills/figma.svg",
+            "priority": 1
+        },
+        {
+            "name": "Laravel",
+            "icon": "/assets/skills/laravel.svg",
+            "priority": 3
+        },
+        {
+            "name": "React",
+            "icon": "/assets/skills/react.svg",
+            "priority": 3
+        },
+        {
+            "name": "NextJS",
+            "icon": "/assets/skills/nextjs.svg",
+            "priority": 3
+        },
+        {
+            "name": "Strapi",
+            "icon": "/assets/skills/strapi.svg",
+            "priority": 1
+        },
+        {
+            "name": "Golang",
+            "icon": "/assets/skills/go.svg",
+            "priority": 1
+        },
+        {
+            "name": "Redis",
+            "icon": "/assets/skills/redis.svg",
+            "priority": 1
+        },
+        {
+            "name": "MySQL",
+            "icon": "/assets/skills/mysql.svg",
+            "priority": 3
+        },
+        {
+            "name": "PostgreSQL",
+            "icon": "/assets/skills/postgres.svg",
+            "priority": 2
+        },
+        {
+            "name": "Flutter",
+            "icon": "/assets/skills/flutter.svg",
+            "priority": 2
+        },
+        {
+            "name": "NestJS",
+            "icon": "/assets/skills/nestjs.svg",
+            "priority": 3
+        },
+        {
+            "name": "Kafka",
+            "icon": "/assets/skills/kafka.svg",
+            "priority": 1
+        },
+        {
+            "name": "Docker",
+            "icon": "/assets/skills/docker.svg",
+            "priority": 3
+        },
+        {
+            "name": "Kubernetes",
+            "icon": "/assets/skills/k8s.svg",
+            "priority": 1
+        }
+    ]
+}
