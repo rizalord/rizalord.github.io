@@ -1,31 +1,35 @@
 {
-  "name": "app",
+  "name": "04_portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@chakra-ui/icons": "^2.1.0",
-    "@chakra-ui/react": "^2.8.0",
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "contentful": "^8.4.2",
-    "framer-motion": "^10.16.1",
-    "next": "^13.4.19",
-    "next-seo": "^4.26.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.2.0"
+    "flowbite": "^2.5.2",
+    "flowbite-react": "^0.10.2",
+    "formik": "^2.4.6",
+    "moment": "^2.30.1",
+    "next": "15.1.0",
+    "next-themes": "^0.4.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-fast-marquee": "^1.6.5",
+    "yup": "^1.5.0"
   },
   "devDependencies": {
-    "@types/node": "^20.5.7",
-    "@types/react": "17.0.14",
-    "eslint": "7.31.0",
-    "eslint-config-next": "^13.4.19",
-    "typescript": "^5.2.2"
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }

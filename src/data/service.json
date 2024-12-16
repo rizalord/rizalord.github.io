@@ -1,0 +1,17 @@
+{
+    "name": "Services I Offered",
+    "services": [
+        {
+            "name": "Web Development",
+            "icon": "/assets/services/web-development.svg"
+        },
+        {
+            "name": "Mobile Development",
+            "icon": "/assets/services/mobile-development.svg"
+        },
+        {
+            "name": "Cloud Computing",
+            "icon": "/assets/services/cloud-computing.svg"
+        }
+    ]
+}

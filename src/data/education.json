@@ -1,0 +1,21 @@
+{
+    "name": "Education",
+    "educations": [
+        {
+            "institution": "SMK Negeri 4 Malang",
+            "logo": "/assets/educations/grafika.svg",
+            "degree": "Software Engineering",
+            "startDate": "2016-07-01",
+            "endDate": "2019-07-01",
+            "link": "https://smkn4malang.sch.id/"
+        },
+        {
+            "institution": "Universitas Merdeka Malang",
+            "logo": "/assets/educations/unmer.svg",
+            "degree": "Bachelor of Information Systems",
+            "startDate": "2019-07-01",
+            "endDate": "2025-04-01",
+            "link": "https://unmer.ac.id/"
+        }
+    ]
+}

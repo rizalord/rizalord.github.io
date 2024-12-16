@@ -1,0 +1,306 @@
+{
+    "title": "Check Out My Latest",
+    "title_bold": "Projects",
+    "description": "Here are some of my projects that I have worked on. You can check them out and let me know what you think.",
+    "projects": [
+        {
+            "name": "Unpas Landing Page",
+            "description": "Clone of Old UNPAS Landing Page",
+            "category": "Web Design Competition",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "Javascript"
+            ],
+            "image": "/assets/projects/01-unpas-landing-page.webp",
+            "link": null
+        },
+        {
+            "name": "Unpas Landing Page",
+            "description": "Heroes Landing Page for Web Design Competition (Semi-Final)",
+            "category": "Web Design Competition",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "Javascript"
+            ],
+            "image": "/assets/projects/02-heroes-landing-page.webp",
+            "link": null
+        },
+        {
+            "name": "HIV/AIDS Landing Page",
+            "description": "Landing Page about HIV/AIDS for Web Design Competition (Final)",
+            "category": "Web Design Competition",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "Javascript"
+            ],
+            "image": "/assets/projects/03-hiv-aids-landing-page.webp",
+            "link": null
+        },
+        {
+            "name": "Voya",
+            "description": "11th grade final project about Video Sharing Sites",
+            "category": "Web Development",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "Javascript",
+                "Codeigniter",
+                "MySQL"
+            ],
+            "image": "/assets/projects/04-voya.webp",
+            "link": null
+        },
+        {
+            "name": "GO Cure",
+            "description": "Final project of OOP subject in grade 11 about Drug Management System",
+            "category": "Desktop Development",
+            "technologies": [
+                "Java",
+                "MySQL"
+            ],
+            "image": "/assets/projects/05-go-cure.webp",
+            "link": null
+        },
+        {
+            "name": "Dewa Komik",
+            "description": "Mobile Application for reading comics",
+            "category": "Mobile Development",
+            "technologies": [
+                "React Native",
+                "Laravel",
+                "React",
+                "PostgreSQL"
+            ],
+            "image": "/assets/projects/06-dewa-komik.webp",
+            "link": null
+        },
+        {
+            "name": "Remap",
+            "description": "FREE Intelligence Social Media app for Android and iOS",
+            "category": "Mobile Development",
+            "technologies": [
+                "React Native"
+            ],
+            "image": "/assets/projects/07-remap.webp",
+            "link": null
+        },
+        {
+            "name": "Baca Tarot",
+            "description": "Website to read people's predictions using Tarot",
+            "category": "Web Development",
+            "technologies": [
+                "VueJS",
+                "AdonisJS"
+            ],
+            "image": "/assets/projects/08-baca-tarot.webp",
+            "link": null
+        },
+        {
+            "name": "Ngaji Lagi",
+            "description": "Website for learning to read the Qur'an taught by Experts",
+            "category": "Web Development",
+            "technologies": [
+                "VueJS",
+                "AdonisJS"
+            ],
+            "image": "/assets/projects/09-ngaji-lagi.webp",
+            "link": null
+        },
+        {
+            "name": "Bibo",
+            "description": "Website for learning to read the Qur'an taught by Experts",
+            "category": "Web Development",
+            "technologies": [
+                "VueJS",
+                "AdonisJS"
+            ],
+            "image": "/assets/projects/10-bibo.webp",
+            "link": null
+        },
+        {
+            "name": "Alkademi",
+            "description": "A Company Profile Website for Alkademi",
+            "category": "Web Development",
+            "technologies": [
+                "VueJS",
+                "Strapi",
+                "PostgreSQL",
+                "Tailwind"
+            ],
+            "image": "/assets/projects/11-alkademi.webp",
+            "link": null
+        },
+        {
+            "name": "Sumpah Pemula",
+            "description": "Website that accepts volunteers who will later be given projects",
+            "category": "Web Development",
+            "technologies": [
+                "NuxtJS",
+                "Firebase"
+            ],
+            "image": "/assets/projects/12-sumpah-pemula.webp",
+            "link": null
+        },
+        {
+            "name": "WIA Landing Page",
+            "description": "Landing Page clone from World in Audition Game page",
+            "category": "Web Development",
+            "technologies": [
+                "HTML",
+                "Tailwind",
+                "Javascript"
+            ],
+            "image": "/assets/projects/13-wia-landing-page.webp",
+            "link": null
+        },
+        {
+            "name": "Samehadaku Mobile App",
+            "description": "Android App to view Samehadaku and Download from Samehadaku Page without ads",
+            "category": "Mobile Development",
+            "technologies": [
+                "Figma",
+                "ExpressJS",
+                "Flutter"
+            ],
+            "image": "/assets/projects/14-samehadaku-mobile-app.webp",
+            "link": null
+        },
+        {
+            "name": "Komikcast Mobile App",
+            "description": "Android App to read and download comics from Komikcast",
+            "category": "Mobile Development",
+            "technologies": [
+                "Figma",
+                "Flask",
+                "Flutter"
+            ],
+            "image": "/assets/projects/15-komikcast-mobile-app.webp",
+            "link": null
+        },
+        {
+            "name": "Bagi Ilmu",
+            "description": "Educational App to share student notes and watch educational video together",
+            "category": "Mobile Development",
+            "technologies": [
+                "Figma",
+                "Strapi",
+                "Flutter",
+                "PostgreSQL"
+            ],
+            "image": "/assets/projects/16-bagi-ilmu.webp",
+            "link": null
+        },
+        {
+            "name": "Elebrary",
+            "description": "Desktop App to manage school library",
+            "category": "Desktop Development",
+            "technologies": [
+                "Figma",
+                "VB.NET",
+                "SQL Server 2019"
+            ],
+            "image": "/assets/projects/17-elebrary.webp",
+            "link": null
+        },
+        {
+            "name": "Ekata Tech Website",
+            "description": "Company Profile Page for Ekata Tech Company",
+            "category": "Web Development",
+            "technologies": [
+                "NextJS",
+                "Tailwind",
+                "Contentful CMS"
+            ],
+            "image": "/assets/projects/18-ekata-tech-website.webp",
+            "link": null
+        },
+        {
+            "name": "Zendo Driver",
+            "description": "Mobile App for Driver in Zendo Company",
+            "category": "Mobile Development",
+            "technologies": [
+                "Laravel",
+                "Flutter"
+            ],
+            "image": "/assets/projects/19-zendo-driver.webp",
+            "link": null
+        },
+        {
+            "name": "Nukalula",
+            "description": "Fashion Catalog Website for Nukalula Shop",
+            "category": "Web Development",
+            "technologies": [
+                "ReactJS",
+                "Strapi",
+                "MySQL"
+            ],
+            "image": "/assets/projects/20-nukalula.webp",
+            "link": null
+        },
+        {
+            "name": "Siakad Link Landing Page",
+            "description": "Landing Page for Siakad Link Software",
+            "category": "Web Development",
+            "technologies": [
+                "Wordpress",
+                "Elementor",
+                "Figma"
+            ],
+            "image": "/assets/projects/21-siakad-link-landing-page.webp",
+            "link": null
+        },
+        {
+            "name": "Edu AMD Academy",
+            "description": "Online course website for the public",
+            "category": "Web Development",
+            "technologies": [
+                "Codeigniter"
+            ],
+            "image": "/assets/projects/22-edu-amd-academy.webp",
+            "link": null
+        },
+        {
+            "name": "Hub Arkatama",
+            "description": "Attendance System with Fingerprint Support",
+            "category": "Web Development",
+            "technologies": [
+                "Codeigniter",
+                "Fingerspot"
+            ],
+            "image": "/assets/projects/23-hub-arkatama.webp",
+            "link": null
+        },
+        {
+            "name": "Ekata Academy",
+            "description": "A comprehensive online course platform for everyone",
+            "category": "Web Development",
+            "technologies": [
+                "NextJS",
+                "Tailwind",
+                "NestJS",
+                "PostgreSQL",
+                "Redis",
+                "Kafka",
+                "Kubernetes"
+            ],
+            "image": "/assets/projects/24-ekata-academy.webp",
+            "link": null
+        },
+        {
+            "name": "Bayu Tirta Handphone",
+            "description": "Catalog Website for Bayu Tirta Handphone Shop",
+            "category": "Web Development",
+            "technologies": [
+                "ReactJS",
+                "NextJS",
+                "Golang",
+                "PostgreSQL"
+            ],
+            "image": "/assets/projects/25-bayu-tirta-handphone.webp",
+            "link": "https://bayu-tirta.vercel.app/"
+        }
+    ]
+}
