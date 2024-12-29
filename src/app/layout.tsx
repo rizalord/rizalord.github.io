@@ -26,10 +26,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        // className={`${bricolageGrotesque.className} antialiased relative h-screen overflow-y-auto overflow-x-hidden bg-light text-dark dark:bg-dark-2 dark:text-light`}
-        className={`${bricolageGrotesque.className}`}
-      >
+      <body className={`${bricolageGrotesque.className}`}>
         <ThemeProvider attribute="class">
           <SidebarProvider>
             <div className="antialiased relative h-screen overflow-y-auto overflow-x-hidden bg-light text-dark dark:bg-dark-2 dark:text-light">

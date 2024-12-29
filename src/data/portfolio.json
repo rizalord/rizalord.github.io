@@ -13,10 +13,10 @@
                 "Javascript"
             ],
             "image": "/assets/projects/01-unpas-landing-page.webp",
-            "link": null
+            "link": "https://rizalord.github.io/unpas-landing-page/"
         },
         {
-            "name": "Unpas Landing Page",
+            "name": "Heroes Landing Page",
             "description": "Heroes Landing Page for Web Design Competition (Semi-Final)",
             "category": "Web Design Competition",
             "technologies": [
@@ -25,7 +25,7 @@
                 "Javascript"
             ],
             "image": "/assets/projects/02-heroes-landing-page.webp",
-            "link": null
+            "link": "https://rizalord.github.io/pahlawan/"
         },
         {
             "name": "HIV/AIDS Landing Page",
@@ -37,7 +37,7 @@
                 "Javascript"
             ],
             "image": "/assets/projects/03-hiv-aids-landing-page.webp",
-            "link": null
+            "link": "https://rizalord.github.io/hiv-aids/"
         },
         {
             "name": "Voya",
@@ -51,7 +51,7 @@
                 "MySQL"
             ],
             "image": "/assets/projects/04-voya.webp",
-            "link": null
+            "link": "https://github.com/rizalord/voya"
         },
         {
             "name": "GO Cure",
@@ -62,7 +62,7 @@
                 "MySQL"
             ],
             "image": "/assets/projects/05-go-cure.webp",
-            "link": null
+            "link": "https://github.com/rizalord/go-cure"
         },
         {
             "name": "Dewa Komik",
@@ -75,7 +75,7 @@
                 "PostgreSQL"
             ],
             "image": "/assets/projects/06-dewa-komik.webp",
-            "link": null
+            "link": "https://github.com/rizalord/rn-dewa-komik"
         },
         {
             "name": "Remap",
@@ -85,7 +85,7 @@
                 "React Native"
             ],
             "image": "/assets/projects/07-remap.webp",
-            "link": null
+            "link": "https://apkpure.com/id/remap/id.ezyindustries.remap"
         },
         {
             "name": "Baca Tarot",
@@ -131,7 +131,7 @@
                 "Tailwind"
             ],
             "image": "/assets/projects/11-alkademi.webp",
-            "link": null
+            "link": "https://alkademi.id/"
         },
         {
             "name": "Sumpah Pemula",
@@ -154,7 +154,7 @@
                 "Javascript"
             ],
             "image": "/assets/projects/13-wia-landing-page.webp",
-            "link": null
+            "link": "https://rizalord.github.io/wia-landing-page"
         },
         {
             "name": "Samehadaku Mobile App",
@@ -166,7 +166,7 @@
                 "Flutter"
             ],
             "image": "/assets/projects/14-samehadaku-mobile-app.webp",
-            "link": null
+            "link": "https://github.com/rizalord/samehadaku-app"
         },
         {
             "name": "Komikcast Mobile App",
@@ -178,7 +178,7 @@
                 "Flutter"
             ],
             "image": "/assets/projects/15-komikcast-mobile-app.webp",
-            "link": null
+            "link": "https://github.com/rizalord/komikcast-app"
         },
         {
             "name": "Bagi Ilmu",
@@ -191,7 +191,7 @@
                 "PostgreSQL"
             ],
             "image": "/assets/projects/16-bagi-ilmu.webp",
-            "link": null
+            "link": "https://github.com/rizalord/bagi-ilmu-app"
         },
         {
             "name": "Elebrary",
@@ -203,7 +203,7 @@
                 "SQL Server 2019"
             ],
             "image": "/assets/projects/17-elebrary.webp",
-            "link": null
+            "link": "https://github.com/rizalord/elebrary"
         },
         {
             "name": "Ekata Tech Website",
@@ -215,7 +215,7 @@
                 "Contentful CMS"
             ],
             "image": "/assets/projects/18-ekata-tech-website.webp",
-            "link": null
+            "link": "https://ekata-tech.vercel.app/"
         },
         {
             "name": "Zendo Driver",
@@ -226,7 +226,7 @@
                 "Flutter"
             ],
             "image": "/assets/projects/19-zendo-driver.webp",
-            "link": null
+            "link": "https://play.google.com/store/apps/details?id=com.zendo.driver&hl=en"
         },
         {
             "name": "Nukalula",
@@ -238,7 +238,7 @@
                 "MySQL"
             ],
             "image": "/assets/projects/20-nukalula.webp",
-            "link": null
+            "link": "https://github.com/rizalord/fashion-catalog"
         },
         {
             "name": "Siakad Link Landing Page",
@@ -250,7 +250,7 @@
                 "Figma"
             ],
             "image": "/assets/projects/21-siakad-link-landing-page.webp",
-            "link": null
+            "link": "https://siakad.link/"
         },
         {
             "name": "Edu AMD Academy",
@@ -260,7 +260,7 @@
                 "Codeigniter"
             ],
             "image": "/assets/projects/22-edu-amd-academy.webp",
-            "link": null
+            "link": "https://edu.amdacademy.id/"
         },
         {
             "name": "Hub Arkatama",
@@ -271,7 +271,7 @@
                 "Fingerspot"
             ],
             "image": "/assets/projects/23-hub-arkatama.webp",
-            "link": null
+            "link": "https://hub.arkatama.id/"
         },
         {
             "name": "Ekata Academy",
@@ -301,6 +301,20 @@
             ],
             "image": "/assets/projects/25-bayu-tirta-handphone.webp",
             "link": "https://bayu-tirta.vercel.app/"
+        },
+        {
+            "name": "ChatGPT Clone",
+            "description": "A ChatGPT clone web app using Google's Gemini AI 1.5 Flash model with microservices architecture.",
+            "category": "Web Development",
+            "technologies": [
+                "NextJS",
+                "Golang",
+                "PostgreSQL",
+                "GRPC",
+                "Gemini"
+            ],
+            "image": "/assets/projects/26-chatgpt-clone.webp",
+            "link": "https://chatbot-web-service.vercel.app"
         }
     ]
 }

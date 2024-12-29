@@ -84,7 +84,7 @@ export default function PortfolioCard({ portfolio }: PortfolioCardProps) {
                                 </div>
 
                                 <div
-                                    className="flex flex-wrap items-start justify-between py-4 md:p-6"
+                                    className="flex flex-wrap items-start justify-between py-4 md:p-6 gap-3"
                                 >
                                     <div className="">
                                         <h3 className="text-lg font-medium md:text-xl lg:text-2xl">
