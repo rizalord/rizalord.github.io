@@ -8,7 +8,6 @@ import ClipEmailButton from '../Buttons/ClipEmailButton'
 
 interface ContactProps {
     accessKey: string,
-    telegram: string,
     email: string,
 }
 
@@ -20,7 +19,7 @@ interface ContactForm {
     message: string
 }
 
-export default function ContactForm({ accessKey, telegram, email }: ContactProps) {
+export default function ContactForm({ accessKey, email }: ContactProps) {
     const [message, setMessage] = React.useState<{ type: string, text: string } | null>(null)
 
     const initialValues: ContactForm = {

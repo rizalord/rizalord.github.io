@@ -24,7 +24,7 @@ export default async function Contact() {
             </div>
 
             {
-                accessKey && <ContactForm accessKey={accessKey} email={data.email} telegram={data.telegram} />
+                accessKey && <ContactForm accessKey={accessKey} email={data.email} />
             }
 
         </main>
