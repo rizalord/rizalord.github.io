@@ -31,7 +31,7 @@ export default async function IntroCard() {
 
                 {/* CTA buttons */}
                 <div className="mt-6 flex flex-wrap gap-2">
-                    <Link href={data.telegram} target="_blank"
+                    <Link href="/contact" target="_blank"
                         className="inline-flex items-center gap-x-2 rounded-lg border border-transparent bg-primary px-4 py-3 font-medium text-white transition hover:bg-blue-600 focus:outline-none focus:ring disabled:pointer-events-none disabled:opacity-50">
                         <svg width="20px" height="20px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14.5 1.5L0.5 6.5L4.5 8.5L10.5 4.5L6.5 9.5L12.5 13.5L14.5 1.5Z" stroke="#ffffff" strokeLinejoin="round" />
