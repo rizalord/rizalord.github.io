@@ -16,7 +16,7 @@
         },
         {
             "type": "bold",
-            "text": "2 years"
+            "text": "4 years"
         },
         {
             "type": "normal",
@@ -26,7 +26,7 @@
     "counts": [
         {
             "label": "Year of Experience",
-            "count": "2+"
+            "count": "4+"
         },
         {
             "label": "Project Completed",

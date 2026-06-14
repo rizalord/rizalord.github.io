@@ -30,6 +30,16 @@
             "startDate": "2023-08-01",
             "endDate": "2023-12-01",
             "link": "https://arkatama.id/"
+        },
+        {
+            "company_longname": "Universitas Merdeka Malang",
+            "company_shortname": "Unmer",
+            "logo": "/assets/works/unmer.svg",
+            "position_longname": "Programmer",
+            "position_shortname": "Contract",
+            "startDate": "2025-03-01",
+            "endDate": "2027-03-01",
+            "link": "https://unmer.ac.id/"
         }
     ]
 }

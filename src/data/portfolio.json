@@ -315,6 +315,66 @@
             ],
             "image": "/assets/projects/26-chatgpt-clone.webp",
             "link": "https://chatbot-web-service.vercel.app"
+        },
+        {
+            "name": "Gate SSO",
+            "description": "A Single Sign-On (SSO) system for Universitas Merdeka Malang, allowing students and staff to access multiple university services with one set of credentials.",
+            "category": "Web Development",
+            "technologies": [],
+            "image": "/assets/projects/27-gate-sso.webp",
+            "link": "https://gate.unmer.ac.id"
+        },
+        {
+            "name": "Tracer Study",
+            "description": "A web application for Universitas Merdeka Malang to track the career paths of its graduates, providing valuable insights for both the university and its alumni.",
+            "category": "Web Development",
+            "technologies": [],
+            "image": "/assets/projects/28-tracer.webp",
+            "link": "https://tracer.unmer.ac.id"
+        },
+        {
+            "name": "E-Office",
+            "description": "An electronic office management system for Universitas Merdeka Malang, streamlining administrative tasks and improving communication within the university.",
+            "category": "Web Development",
+            "technologies": [],
+            "image": "/assets/projects/29-eoffice.webp",
+            "link": "https://eoffice.unmer.ac.id"
+        },
+        {
+            "name": "Inventaris",
+            "description": "An inventory management system for Universitas Merdeka Malang, helping the university keep track of its assets and resources efficiently.",
+            "category": "Web Development",
+            "technologies": [],
+            "image": "/assets/projects/30-inventaris.webp",
+            "link": "https://inventaris.unmer.ac.id"
+        },
+        {
+            "name": "PIPA",
+            "description": "A Community-Based Token Exchange Platform that allows users to trade and exchange between PI Token to PALMO Token, fostering a vibrant ecosystem for digital assets.",
+            "category": "Mobile Development",
+            "technologies": [],
+            "image": "/assets/projects/31-pipa.webp",
+            "link": "https://pipa.orcib.com"
+        },
+        {
+            "name": "BARTER",
+            "description": "A Mobile Application for Barter Trading, enabling users to exchange goods and services without the need for money, promoting a sustainable and community-driven economy.",
+            "category": "Mobile Development",
+            "technologies": [
+                "Solana Blockchain"
+            ],
+            "image": "/assets/projects/32-barter.webp",
+            "link": "https://barter.orcib.com"
+        },
+        {
+            "name": "Flowcian",
+            "description": "AI Agent that can automate your workflow by connecting to your apps and services, allowing you to create custom automations and integrations without writing any code.",
+            "category": "AI Development",
+            "technologies": [
+                "AI"
+            ],
+            "image": "/assets/projects/33-flowcian.webp",
+            "link": "https://flowcian.com"
         }
     ]
 }
