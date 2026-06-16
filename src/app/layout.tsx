@@ -1,58 +1,101 @@
-import Header from '@/components/Headers/Header'
-import "./../styles/globals.css"
-import "./../styles/swiper-bundle.min.css"
-import "./../styles/venobox.min.css"
-import { bricolageGrotesque } from './font'
-import { getMetadata } from '@/utils/metadata'
-import MobileMenu from '@/components/Headers/MobileMenu'
-import Footer from '@/components/Footers/Footer'
-import BackgroundSection from '@/components/Sections/BackgroundSection'
-import { promises as fs } from 'fs'
-import { Nav } from '@/types/nav'
-import { ThemeProvider } from 'next-themes'
-import SidebarProvider from '@/providers/sidebar'
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
+import { absoluteUrl, siteConfig } from "@/lib/site";
+import "./globals.css";
 
-export async function generateMetadata() {
-  return getMetadata()
-}
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+  display: "swap",
+});
 
-export default async function RootLayout({
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: siteConfig.title,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  applicationName: siteConfig.name,
+  keywords: [...siteConfig.keywords],
+  authors: [{ name: siteConfig.name, url: siteConfig.url }],
+  creator: siteConfig.name,
+  publisher: siteConfig.name,
+  category: "portfolio",
+  alternates: {
+    canonical: "/",
+  },
+  icons: {
+    icon: [
+      {
+        url: "/assets/img/favicon.png",
+        type: "image/png",
+      },
+    ],
+    shortcut: "/assets/img/favicon.png",
+    apple: "/assets/img/favicon.png",
+  },
+  manifest: "/manifest.webmanifest",
+  openGraph: {
+    title: siteConfig.title,
+    description: siteConfig.description,
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    locale: siteConfig.locale,
+    type: "website",
+    images: [
+      {
+        url: absoluteUrl(siteConfig.image),
+        width: 1200,
+        height: 1200,
+        alt: siteConfig.name,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.title,
+    description: siteConfig.description,
+    images: [absoluteUrl(siteConfig.image)],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+};
+
+export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
-  const file = await fs.readFile(process.cwd() + '/src/data/nav.json', 'utf8')
-  const data: Nav = JSON.parse(file)
-
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${bricolageGrotesque.className}`}>
-        <ThemeProvider attribute="class">
-          <SidebarProvider>
-            <div className="antialiased relative h-screen overflow-y-auto overflow-x-hidden bg-light text-dark dark:bg-dark-2 dark:text-light">
-              <div className="mx-auto flex max-w-screen-xl flex-col justify-between gap-4 p-4 lg:gap-6 lg:p-6">
-                {/* Header */}
-                <Header title={data.header.title} menu={data.header.menu} />
-                {/* Header end */}
-
-                {/* Mobile Menu */}
-                <MobileMenu title={data.header.title} menu={data.header.menu} />
-                {/* Mobile Menu end */}
-
-                {/* Content */}
-                {children}
-                {/* Content end */}
-
-                {/* Footer */}
-                <Footer />
-                {/* Footer end */}
-              </div>
-
-              <BackgroundSection />
-            </div>
-          </SidebarProvider>
+      <body
+        suppressHydrationWarning
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }

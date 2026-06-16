@@ -5,6 +5,7 @@
             "institution": "SMK Negeri 4 Malang",
             "logo": "/assets/educations/grafika.svg",
             "degree": "Software Engineering",
+            "description": "Built a strong foundation in software engineering, web development, databases, and practical application development through hands-on vocational projects.",
             "startDate": "2016-07-01",
             "endDate": "2019-07-01",
             "link": "https://smkn4malang.sch.id/"
@@ -13,6 +14,7 @@
             "institution": "Universitas Merdeka Malang",
             "logo": "/assets/educations/unmer.svg",
             "degree": "Bachelor of Information Systems",
+            "description": "Studied information systems with a focus on software development, system analysis, databases, and building digital solutions for real organizational needs.",
             "startDate": "2019-07-01",
             "endDate": "2025-04-01",
             "link": "https://unmer.ac.id/"

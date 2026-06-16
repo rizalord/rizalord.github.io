@@ -1,38 +1,39 @@
-import ContactCard from '@/components/Cards/ContactCard'
-import ExpertiseCard from '@/components/Cards/ExpertiseCard'
-import IntroCard from '@/components/Cards/IntroCard'
-import RecentProjectCard from '@/components/Cards/RecentProjectCard'
-import ServiceCard from '@/components/Cards/ServiceCard'
-import WorkExperienceCard from '@/components/Cards/WorkExperienceCard'
-import { getMetadata } from '@/utils/metadata'
-
-export async function generateMetadata() {
-  const metadata = getMetadata()
-  return metadata
-}
+import { Navbar } from "@/components/Navbar";
+import { Hero } from "@/components/Hero";
+import { About } from "@/components/About";
+import { Skills } from "@/components/Skills";
+import { Projects } from "@/components/Projects";
+import { Experience } from "@/components/Experience";
+import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
+import {
+  portfolioJsonLd,
+  profileJsonLd,
+  websiteJsonLd,
+} from "@/lib/site";
 
 export default function Home() {
+  const structuredData = [profileJsonLd, websiteJsonLd, portfolioJsonLd];
+  const webformAccessKey = process.env.WEBFORM_ACCESS_KEY || "";
+
   return (
-    <main className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-6">
-      {/* Intro */}
-      <IntroCard />
-
-      <div className="grid grid-cols-1 gap-4 lg:gap-6">
-        {/* Work Experience */}
-        <WorkExperienceCard />
-
-        {/* Expertise */}
-        <ExpertiseCard />
-      </div>
-
-      {/* Projects */}
-      <RecentProjectCard />
-
-      {/* Services */}
-      <ServiceCard />
-
-      {/* Contact */}
-      <ContactCard />
-    </main>
-  )
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
+        }}
+      />
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Contact accessKey={webformAccessKey} />
+      </main>
+      <Footer />
+    </>
+  );
 }

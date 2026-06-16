@@ -1,13 +1,13 @@
-import { MetadataRoute } from 'next'
+import type { MetadataRoute } from "next";
+import { absoluteUrl, siteConfig } from "@/lib/site";
 
 export default function robots(): MetadataRoute.Robots {
-    const siteUrl = process.env.SITE_URL || process.env.NEXT_PUBLIC_SITE_URL
-
-    return {
-        rules: {
-            userAgent: '*',
-            allow: '/',
-        },
-        sitemap: `${siteUrl}/sitemap.xml`,
-    }
+  return {
+    rules: {
+      userAgent: "*",
+      allow: "/",
+    },
+    sitemap: absoluteUrl("/sitemap.xml"),
+    host: siteConfig.url,
+  };
 }

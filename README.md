@@ -1,36 +1,156 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ahmad Rizal Portfolio
+
+A personal portfolio website for Ahmad Rizal Khamdani, built with Next.js, React, TypeScript, and Tailwind CSS. The site highlights profile information, services, skills, selected projects, work experience, education, social links, and a contact form.
+
+The project is designed to be easy to maintain: most portfolio content lives in JSON files under `src/data`, while the application shell, SEO metadata, and UI sections are handled by reusable React components.
+
+## Features
+
+- Responsive single-page portfolio experience
+- Light and dark theme support with `next-themes`
+- Smooth reveal, magnetic, tilt, marquee, and gradient animations
+- Content-driven sections for intro, about, skills, projects, experience, education, and contact details
+- SEO metadata, Open Graph, Twitter card metadata, JSON-LD structured data, sitemap, robots file, and web app manifest
+- Contact form integration with Web3Forms
+- Asset-based project, skill, service, education, and workplace visuals
+
+## Tech Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Motion
+- next-themes
+- Lucide React
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Use a recent Node.js version that supports Next.js 16 and React 19. Node.js 20 or newer is recommended.
+
+### Installation
+
+```bash
+npm install
+```
+
+### Environment Variables
+
+Create a `.env` file in the project root:
+
+```env
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+WEBFORM_ACCESS_KEY=your_web3forms_access_key
+```
+
+`NEXT_PUBLIC_SITE_URL` is used for canonical URLs, sitemap, robots metadata, Open Graph images, and structured data.
+
+`WEBFORM_ACCESS_KEY` is used by the contact form. The form will show a configuration error if this value is missing.
+
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000` in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+### Linting
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run lint
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```text
+.
+├── public/
+│   └── assets/              # Images, icons, project thumbnails, skill logos
+├── src/
+│   ├── app/                 # Next.js app routes, layout, metadata, sitemap, robots, manifest
+│   ├── components/          # Page sections and reusable UI components
+│   ├── data/                # Editable portfolio content
+│   └── lib/                 # Shared utilities, site config, metadata helpers
+├── next.config.ts
+├── package.json
+├── postcss.config.mjs
+└── tsconfig.json
+```
 
-## Deploy on Vercel
+## Editing Portfolio Content
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Most content can be updated without touching component code.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| File | Purpose |
+| --- | --- |
+| `src/data/intro.json` | Hero intro text, availability, and quick stats |
+| `src/data/about.json` | Profile description, email, Telegram, and social links |
+| `src/data/service.json` | Services displayed on the site |
+| `src/data/skill.json` | Skill categories and skill icons |
+| `src/data/portfolio.json` | Project list, descriptions, technologies, images, and links |
+| `src/data/employment.json` | Work experience timeline |
+| `src/data/education.json` | Education timeline |
+| `src/data/nav.json` | Navigation labels and anchors, if used directly |
+
+The file `src/data/portfolio.ts` acts as a typed data layer. Components import portfolio data from this file, so keep JSON shape consistent when editing content.
+
+## SEO and Site Configuration
+
+Main site metadata is defined in `src/lib/site.ts`, including:
+
+- Site name, title, description, language, and locale
+- Canonical site URL
+- SEO keywords
+- Open Graph image
+- Person, website, and portfolio JSON-LD data
+
+Next.js metadata is configured in `src/app/layout.tsx`. Sitemap, robots, and manifest output are generated by:
+
+- `src/app/sitemap.ts`
+- `src/app/robots.ts`
+- `src/app/manifest.ts`
+
+Update `NEXT_PUBLIC_SITE_URL` before deploying so all generated URLs point to the production domain.
+
+## Assets
+
+Static files live in `public/assets`.
+
+Common asset paths:
+
+- Project thumbnails: `public/assets/projects`
+- Skill icons: `public/assets/skills`
+- Service icons: `public/assets/services`
+- Education logos: `public/assets/educations`
+- Workplace logos: `public/assets/works`
+- General images and favicon files: `public/assets/img`
+
+When adding a new project, place the thumbnail in `public/assets/projects` and reference it from `src/data/portfolio.json` with a root-relative path, for example:
+
+```json
+"/assets/projects/example.webp"
+```
+
+## Deployment
+
+This project is ready to deploy on platforms that support Next.js, such as Vercel.
+
+Before deploying:
+
+1. Set `NEXT_PUBLIC_SITE_URL` to the production domain.
+2. Set `WEBFORM_ACCESS_KEY` if the contact form should be active.
+3. Run `npm run build` to verify the production build locally.
+
+## License
+
+This is a personal portfolio project. Add a license file if you plan to distribute, reuse, or open-source it publicly.

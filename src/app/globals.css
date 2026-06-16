@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+/* ============================================================
+   THEME — Clean Studio design tokens (Tailwind v4 CSS-first)
+   ============================================================ */
+@theme {
+  /* Brand accent */
+  --color-accent: #4f46e5;
+  --color-accent-soft: #6366f1;
+  --color-accent-fg: #ffffff;
+
+  /* Neutral surfaces (light) */
+  --color-bg: #fafafa;
+  --color-surface: #ffffff;
+  --color-ink: #0a0a0a;
+  --color-muted: #6b7280;
+  --color-line: #ececef;
+
+  /* Typography */
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  /* Motion */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Custom animations */
+  --animate-aurora: aurora 18s ease-in-out infinite alternate;
+  --animate-marquee: marquee 38s linear infinite;
+  --animate-float: float 7s ease-in-out infinite;
+}
+
+@keyframes aurora {
+  0% {
+    transform: translate3d(-8%, -4%, 0) scale(1);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translate3d(6%, 4%, 0) scale(1.12);
+    opacity: 0.85;
+  }
+  100% {
+    transform: translate3d(-4%, 6%, 0) scale(1.04);
+    opacity: 0.6;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* ============================================================
+   DARK MODE VARIANT — next-themes sets class="dark" on <html>
+   ============================================================ */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  .dark {
+    color-scheme: dark;
+    --color-bg: #08080b;
+    --color-surface: #0f0f14;
+    --color-ink: #f5f5f7;
+    --color-muted: #9ca3af;
+    --color-line: #1f1f27;
+  }
+
+  * {
+    border-color: var(--color-line);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    transition: background-color 0.4s var(--ease-out-expo),
+      color 0.4s var(--ease-out-expo);
+  }
+
+  ::selection {
+    background-color: color-mix(in oklab, var(--color-accent) 24%, transparent);
+    color: var(--color-ink);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: color-mix(in oklab, var(--color-ink) 18%, transparent);
+    border-radius: 999px;
+    border: 2px solid var(--color-bg);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: color-mix(in oklab, var(--color-ink) 30%, transparent);
+  }
+}
+
+/* ============================================================
+   UTILITIES
+   ============================================================ */
+@utility container-px {
+  padding-inline: 1.5rem;
+}
+
+@layer utilities {
+  .section-shell {
+    width: 100%;
+    max-width: 80rem;
+    margin-inline: auto;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Gradient text */
+  .text-gradient {
+    background: linear-gradient(
+      120deg,
+      var(--color-ink) 0%,
+      var(--color-accent) 60%,
+      var(--color-accent-soft) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Fine grid background */
+  .bg-grid {
+    background-image: linear-gradient(
+        to right,
+        color-mix(in oklab, var(--color-ink) 5%, transparent) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        to bottom,
+        color-mix(in oklab, var(--color-ink) 5%, transparent) 1px,
+        transparent 1px
+      );
+    background-size: 56px 56px;
+  }
+
+  /* Layered soft shadow used on cards */
+  .shadow-soft {
+    box-shadow: 0 1px 2px -1px rgb(10 10 10 / 0.06),
+      0 8px 24px -12px rgb(10 10 10 / 0.12);
+  }
+  .dark .shadow-soft {
+    box-shadow: 0 1px 2px -1px rgb(0 0 0 / 0.4),
+      0 12px 36px -16px rgb(0 0 0 / 0.6);
+  }
+
+  /* Hairline border */
+  .border-hairline {
+    border: 1px solid color-mix(in oklab, var(--color-ink) 8%, transparent);
+  }
+  .dark .border-hairline {
+    border: 1px solid color-mix(in oklab, var(--color-ink) 12%, transparent);
+  }
+
+  /* Glass card surface */
+  .glass {
+    background-color: color-mix(in oklab, var(--color-surface) 72%, transparent);
+    backdrop-filter: blur(12px);
+  }
+}

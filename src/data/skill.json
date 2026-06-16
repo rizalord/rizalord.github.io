@@ -1,75 +1,34 @@
 {
     "name": "Tools & Technologies",
-    "skills": [
+    "categories": [
         {
-            "name": "Figma",
-            "icon": "/assets/skills/figma.svg",
-            "priority": 1
+            "name": "Frontend",
+            "skills": [
+                { "name": "React", "icon": "/assets/skills/react.svg" },
+                { "name": "NextJS", "icon": "/assets/skills/nextjs.svg" },
+                { "name": "Flutter", "icon": "/assets/skills/flutter.svg" },
+                { "name": "Figma", "icon": "/assets/skills/figma.svg" }
+            ]
         },
         {
-            "name": "Laravel",
-            "icon": "/assets/skills/laravel.svg",
-            "priority": 3
+            "name": "Backend",
+            "skills": [
+                { "name": "Laravel", "icon": "/assets/skills/laravel.svg" },
+                { "name": "NestJS", "icon": "/assets/skills/nestjs.svg" },
+                { "name": "Golang", "icon": "/assets/skills/go.svg" },
+                { "name": "MySQL", "icon": "/assets/skills/mysql.svg" },
+                { "name": "PostgreSQL", "icon": "/assets/skills/postgres.svg" },
+                { "name": "Strapi", "icon": "/assets/skills/strapi.svg" }
+            ]
         },
         {
-            "name": "React",
-            "icon": "/assets/skills/react.svg",
-            "priority": 3
-        },
-        {
-            "name": "NextJS",
-            "icon": "/assets/skills/nextjs.svg",
-            "priority": 3
-        },
-        {
-            "name": "Strapi",
-            "icon": "/assets/skills/strapi.svg",
-            "priority": 1
-        },
-        {
-            "name": "Golang",
-            "icon": "/assets/skills/go.svg",
-            "priority": 1
-        },
-        {
-            "name": "Redis",
-            "icon": "/assets/skills/redis.svg",
-            "priority": 1
-        },
-        {
-            "name": "MySQL",
-            "icon": "/assets/skills/mysql.svg",
-            "priority": 3
-        },
-        {
-            "name": "PostgreSQL",
-            "icon": "/assets/skills/postgres.svg",
-            "priority": 2
-        },
-        {
-            "name": "Flutter",
-            "icon": "/assets/skills/flutter.svg",
-            "priority": 2
-        },
-        {
-            "name": "NestJS",
-            "icon": "/assets/skills/nestjs.svg",
-            "priority": 3
-        },
-        {
-            "name": "Kafka",
-            "icon": "/assets/skills/kafka.svg",
-            "priority": 1
-        },
-        {
-            "name": "Docker",
-            "icon": "/assets/skills/docker.svg",
-            "priority": 3
-        },
-        {
-            "name": "Kubernetes",
-            "icon": "/assets/skills/k8s.svg",
-            "priority": 1
+            "name": "Infrastructure",
+            "skills": [
+                { "name": "Docker", "icon": "/assets/skills/docker.svg" },
+                { "name": "Kubernetes", "icon": "/assets/skills/k8s.svg" },
+                { "name": "Redis", "icon": "/assets/skills/redis.svg" },
+                { "name": "Kafka", "icon": "/assets/skills/kafka.svg" }
+            ]
         }
     ]
 }
