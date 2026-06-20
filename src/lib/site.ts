@@ -11,7 +11,7 @@ export const siteConfig = {
   url: rawSiteUrl.replace(/\/$/, ""),
   locale: "en_US",
   language: "en",
-  image: "/assets/img/me.png",
+  image: "/assets/img/me.webp",
   keywords: [
     "Ahmad Rizal Khamdani",
     "Rizalord",

@@ -23,7 +23,7 @@ export function About() {
           <Reveal className="lg:col-span-2">
             <div className="group relative aspect-[4/5] overflow-hidden rounded-3xl border-hairline bg-[var(--color-surface)] shadow-soft">
               <Image
-                src="/assets/img/me.png"
+                src="/assets/img/me.webp"
                 alt={profile.name}
                 fill
                 priority
