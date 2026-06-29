@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import { ThemeProvider } from "@/components/theme-provider";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import "./globals.css";
@@ -95,6 +96,10 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        <Script
+          src="https://flowcian.com/widget.js?key=int_XQSfqBnnWVNKAkaWa0VpDXnK26mSSmuRKwsKolPQBK14hLkP"
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );
