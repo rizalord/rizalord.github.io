@@ -7,7 +7,7 @@ export const siteConfig = {
   name: profile.name,
   title: `${profile.name} - Full Stack Developer`,
   description:
-    "Full Stack Developer in Malang, Indonesia with 4+ years of experience building scalable web apps, mobile apps, APIs, and cloud-ready product systems.",
+    "Full Stack Developer in Malang, Indonesia with 3+ years of experience building scalable web apps, mobile apps, APIs, and cloud-ready product systems.",
   url: rawSiteUrl.replace(/\/$/, ""),
   locale: "en_US",
   language: "en",
